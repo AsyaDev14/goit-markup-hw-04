@@ -231,8 +231,6 @@ img{
 
 .features-icon{
   display: inline-block;
-  width: 64px;
-  height: 64px;
 }
 
 .fetures-item{
@@ -333,6 +331,39 @@ img{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.team-flex{
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-link{
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.team-link:hover,
+:focus {
+  background-color: #404bbf;
+}
+
+.team-icon-link {
+  fill: #f4f4fd;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover .team-icon-link {
+  fill: #ffffff;
 }
 
 /* footer */
