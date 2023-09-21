@@ -599,6 +599,7 @@ img{
 
 .portfolio-link{
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -675,7 +676,8 @@ img{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list>.portfolio-item:hover .text-overlay {
+.portfolio-list .portfolio-link:hover .text-overlay {
+  transform: translateY(0%);
   opacity: 1;
 }
 
